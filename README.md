@@ -3,14 +3,6 @@
 Proyecto de análisis estadístico de mediciones físicas obtenidas en laboratorio,
 con visualización de datos mediante gráficos de dispersión en Python.
 
-## 📁 Estructura del Repositorio
-Mediciones-en-el-laboratorio/
-│
-├── GraficoDiametro.py               # Gráfico de dispersión para mediciones de diámetro
-├── GraficoLongitud.py               # Gráfico de dispersión para mediciones de longitud
-├── grafico_dispersion_diametro.png  # Imagen exportada del gráfico de diámetro
-├── grafico_dispersion_longitud.png  # Imagen exportada del gráfico de longitud
-└── README.md
 ## 📊 Descripción
 
 Este proyecto genera gráficos de dispersión a partir de datos de medición
