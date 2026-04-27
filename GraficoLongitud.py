@@ -1,30 +1,35 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Datos
+# Datos (diámetro en mm ≡ x10^-3 m)
 intentos = [1, 2, 3, 4, 5]
-longitudes = [75.2, 75.25, 75.2, 75.2, 75.25]
+diametros = [21.45, 21.50, 21.40, 21.45, 21.40]
 
 # Promedio
-promedio = np.mean(longitudes)
+promedio = np.mean(diametros)
 
 plt.figure()
 
-# Puntos azules
-plt.scatter(intentos, longitudes, 
+# Puntos (azul)
+plt.scatter(intentos, diametros,
             color='royalblue', label="Mediciones")
 
-# Línea del promedio (solo línea, sin puntos)
+# Línea del promedio (rojo)
 plt.axhline(promedio, linestyle='--',
             color='crimson',
             label=rf"Promedio = {promedio:.2f} $\times 10^{{-3}}$ m")
 
+# Etiquetas
 plt.xlabel("Intento")
-plt.ylabel(r"Longitud ($\times 10^{-3}$ m)")
-plt.title("Mediciones de longitud del cilindro")
+plt.ylabel(r"Diámetro ($\times 10^{-3}$ m)")
+plt.title("Mediciones del diámetro del cilindro")
 
+
+plt.xticks(intentos)
+
+# Estética
 plt.grid(alpha=0.3)
 plt.legend()
 
-plt.savefig("grafico_dispersion_longitud.png")
-# plt.show()
+# Guardar
+plt.savefig("grafico_dispersion_diametro.png")
