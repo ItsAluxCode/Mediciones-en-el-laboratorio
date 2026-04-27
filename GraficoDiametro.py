@@ -24,10 +24,12 @@ plt.xlabel("Intento")
 plt.ylabel(r"Diámetro ($\times 10^{-3}$ m)")
 plt.title("Mediciones del diámetro del cilindro")
 
+# ← ESTA es la línea que faltaba
+plt.xticks(intentos)
+
 # Estética
 plt.grid(alpha=0.3)
 plt.legend()
 
 # Guardar
 plt.savefig("grafico_dispersion_diametro.png")
-# plt.show()
